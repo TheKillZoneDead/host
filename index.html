@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad San Benito</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS y Style CSS referencias -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    
+    <!-- Referencias js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+ <!-- Inicio wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad San Benito</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Secciones de la WEB</p>
+                
+                    <li class="active">
+                    <a href="index.html">Inicio</a>
+                </li>               
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Carerras</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="telecomunicaciones.html">Ing.Telecomunicaciones</a>
+                        </li>
+                        <li>
+                            <a href="informatica.html">Ing.Informática</a>
+                        </li>
+                        <li>
+                            <a href="mecanica.html">Ing.Mecánica</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Artículos de Interes</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="antenas.html">Antenas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Proceso de Inscripción</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="pdf/inscripcion.pdf" class="download">Descargar Planilla de Inscripción</a>
+                </li>         
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Alternar Barra Lateral</span>
+                    </button>
+                   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                         <!--     <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            ->
+      <!--  Inicio del buscador
+        <div class="nav search-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
+            </form>
+          </li>
+        </ul>
+      </div **/
+      Final del buscador -->
+      
+                        </ul>
+                    </div> -
+                </div>
+            </nav>
+            <header>
+            <div id="banner">
+<div id="welcome">
+	      <h3>Universidad San Benito</h3>
+</div>
+                </div>
+            </header>
+            
+              <div id="strapline"><!--Inicio strapline-->
+	    <div id="welcome_slogan"><!--Inicio de welcome_slogan-->
+	      <h3>"En donde aprender es crecer"</h3>
+	    </div><!--cierre de welcome_slogan-->
+      </div><!--cierre de strapline-->
+      
+<!--Inicio carrusel de imagenes-->
+<div id="demo" class="carousel slide" data-ride="carousel"> 
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/inicio/home_1.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+          <div class="d-inline-flex" style="background: #dc3545a6;">
+        <c1>Con sede principal en Maracay</c1>
+        </div> 
+        <p></p>
+        <div class="d-inline-flex" style="background: #dc3545a6;">
+        <c2>Pronto con más sedes en el estado</c2>
+        </div> 
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/inicio/aula.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+         <div class="d-inline-flex" style="background: #ffc107a6;">
+        <c1>Aulas de clases con profesionales</c1>
+         </div>
+        <p></p>
+        <div class="d-inline-flex" style="background: #ffc107a6;">
+        <c2>Para nosotros es importante que usted aprenda</c2>
+        </div>
+      </div>   
+    </div>
+          <div class="carousel-item">
+      <img src="images/inicio/estadio.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+          <div class="d-inline-flex" style="background: #28a74580;">
+        <c1>Actividades Extracurriculares</c1>
+        </div>
+        <p></p>
+        <div class="d-inline-flex" style="background: #28a74580;">
+        <c2>Contamos con un estadio y multiples areas para realizarlas</c2>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div> <!--Fin carrusel de imagenes-->
+     <div style="color: #005cbf"> 
+<h2>Universidad San Benito</h2></div> 
+
+
+ <div class="content_imagetext">
+		    <div class="content_image container" style="margin-top:-50px;">
+		        <img src="images/inicio/san-benito.jpg" alt="Fundador" style="width:100%;">
+  <div class="centered">Fundador San Benito</div>
+	        </div>
+<h3>&nbsp;&nbsp;La Universidad San Benito (USB) con sede principal en Maracay estado Aragua fue fundada en el año 1999 
+    debido a la fuerte demanda y alta necesidad que requeria el sector estudiantil universitaria por
+    aquel entonces, es así como gracias al visionero San Benito quien invirtio todo su fortuna para impulsar 
+    el desarrollo tecnologico y estudiantil nace esta universidad, quien el día de hoy junto a sus profesores
+    sigue buscando los mismos idealeas que su fundador.</h3>
+		  </div><!--Fin content_imagetext-->
+<div style="color: #005cbf"> 
+<h2>Servicios que prestamos a los estudiantes</h2>  </div>       
+<div class="content_imagetext">
+		    <div class="content_image container" style="float: left;width: 300px;height: 480px;">
+		        <img src="images/inicio/transporte.jpg" alt="Transporte" style="width:100%; margin-top: 0px;">
+                        <div class="top">Transporte universitario</div>
+                        <img src="images/inicio/enfermeria.jpeg" alt="Transporte" style="width:100%;margin-top: 50px;">
+                        <div class="down">Personal de enfermeria</div> 
+                        
+                        </div>
+  <h3> - Transporte: Con multiples paradas y diferentes destinos para que te sea más fácil ir y venir de nuestra sede.</h3>
+  <br>
+  <h3>  - Enfermeria: Servicio medico calificado para situaciones de emergencia y visitas programadas.</h3> 
+  <br>
+  <h3> - Comedor: Servicio de comedor con las tres (3) comidas esenciales del día si decides residenciarte.</h3>
+  </div>  <!--close content_imagetext-->
+
+  <div class="content_imagetext">
+		    <div class="content_image container" style="width: 300px;height: 250px;margin-top: -25px;">
+  <img src="images/inicio/comedor.jpg" alt="Transporte" style="width:100%;">
+                        <div class="righ">Comedor</div>
+                        </div>
+      <div style="color: #005cbf"> 
+  <h2> Otros servicios</h2></div>
+<h3> - Estadia en las residencias</h3>
+<h3> - Biblioteca</h3>
+<h3> - Laboratorios </h3>
+<h3> - Casilleros </h3>
+<h3> - Baños </h3>
+  </div>  <!--close content_imagetext-->
+
+        </div><!-- Final del Contenido de pagina -->
+    </div><!-- Final del wrapper -->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
