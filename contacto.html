@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad San Benito</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS y Style CSS referencias -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    
+    <!-- Referencias js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+ <!-- Inicio wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad San Benito</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Secciones de la WEB</p>
+                
+                    <li class="active">
+                    <a href="index.html">Inicio</a>
+                </li>               
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Carerras</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="telecomunicaciones.html">Ing.Telecomunicaciones</a>
+                        </li>
+                        <li>
+                            <a href="informatica.html">Ing.Informática</a>
+                        </li>
+                        <li>
+                            <a href="mecanica.html">Ing.Mecánica</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Artículos de Interes</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="antenas.html">Antenas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Proceso de Inscripción</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="pdf/inscripcion.pdf" class="download">Descargar Planilla de Inscripción</a>
+                </li>         
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Alternar Barra Lateral</span>
+                    </button>
+                   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                         <!--     <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            ->
+      <!--  Inicio del buscador
+        <div class="nav search-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
+            </form>
+          </li>
+        </ul>
+      </div **/
+      Final del buscador -->
+      
+                        </ul>
+                    </div> -
+                </div>
+            </nav>
+            <header>
+            <div id="banner">
+<div id="welcome">
+	      <h3>Contacto</h3>
+</div>
+                </div>
+            </header>
+
+           
+                    <!-- page start-->
+        <div class="row" style="margin-top: 10px;">
+          <div class="col-lg-6">
+            <div class="recent">
+              <h3>Envianos un Mensaje</h3>
+            </div>
+            <div id="sendmessage"></div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Introduce más de 4 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" data-rule="email" data-msg="Introduce un correo valido" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="El asunto debe contener al menos 8 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe algo" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Enviar </button></div>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+              <div class="recent" style="margin-top: 10px;">
+            </div>
+            <div class="">
+              <h4>Dirección:</h4>Venezuela, Estado Aragua, Maracay<br>
+              <h4>Teléfono:</h4>345 578 59 45 416</br>
+              <h4>Fax:</h4>123 456 789
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+
+
+
+
+
+        </div><!-- Final del Contenido de pagina -->
+    </div><!-- Final del wrapper -->
+
+<!-- Script para que la barra lateral este oculta por defecto en moviles -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

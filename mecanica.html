@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad San Benito</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS y Style CSS referencias -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    
+    <!-- Referencias js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+ <!-- Inicio wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad San Benito</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Secciones de la WEB</p>
+                
+                    <li class="active">
+                    <a href="index.html">Inicio</a>
+                </li>               
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Carerras</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="telecomunicaciones.html">Ing.Telecomunicaciones</a>
+                        </li>
+                        <li>
+                            <a href="informatica.html">Ing.Informática</a>
+                        </li>
+                        <li>
+                            <a href="mecanica.html">Ing.Mecánica</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Artículos de Interes</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="antenas.html">Antenas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Proceso de Inscripción</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="pdf/inscripcion.pdf" class="download">Descargar Planilla de Inscripción</a>
+                </li>         
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Alternar Barra Lateral</span>
+                    </button>
+                   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                         <!--     <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            ->
+      <!--  Inicio del buscador
+        <div class="nav search-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
+            </form>
+          </li>
+        </ul>
+      </div **/
+      Final del buscador -->
+      
+                        </ul>
+                    </div> -
+                </div>
+            </nav>
+            <header>
+            <div id="banner">
+<div id="welcome">
+	      <h3>Ingeniería en Mecánica</h3>
+</div>
+                </div>
+            </header>
+            
+              <div id="strapline"><!--Inicio strapline-->
+	    <div id="welcome_slogan"><!--Inicio de welcome_slogan-->
+	      <h3>"Piensa cómo podrías hacer mejor las cosas"</h3>
+	    </div><!--cierre de welcome_slogan-->
+      </div><!--cierre de strapline-->
+
+<!--Inicio carrusel de imagenes-->
+<div id="demo" class="carousel slide" data-ride="carousel"> 
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/carreras/controles_mecanicos.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+          <div class="d-inline-flex" style="background: #c3c3c3a6;">
+        <c1>Controles Mecánicos</c1>
+        </div>  
+        <p></p>
+        <div class="d-inline-flex" style="background: #c3c3c3a6;">
+        <c2>Para la automatización de una empresa</c2>
+        </div>  
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/carreras/diseño_mecanico.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+          <div class="d-inline-flex" style="background: #fffc;">
+        <c3>Diseño Mecánico</c3>
+        </div> 
+        <p></p> 
+          <div class="d-inline-flex" style="background: #fffc;"> 
+        <c4>Para la aplicación y creación de herramientas</c4>
+        </div>  
+      </div>   
+    </div>
+          <div class="carousel-item">
+      <img src="images/carreras/mecanica_clasica.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+          <div class="d-inline-flex" style="background: #ffdc72a6;">
+        <c3>Mecánica Clásica</c3>
+        </div>
+        <p></p>
+        <div class="d-inline-flex" style="background: #ffdc72a6;">
+        <c4>Contamos con documentos y patentes originales a disposición</c4>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div> <!--Fin carrusel de imagenes-->
+      <div style="color: #005cbf"> 
+<h2>Ingeniería Mecánica</h2></div> 
+
+
+ <div class="content_imagetext">
+		    <div class="content_image container" style="margin-top:-45px;">
+		        <img src="images/carreras/mujermecanica.jpg" alt="mujer" width="280" height="200">
+  <div class="centered">Mujer mecánica</div>
+	        </div>
+ <h3>&nbsp;&nbsp;La ingeniería mecánica es una de las ramas más antiguas de la ingeniería, que aplica específicamente 
+     los principios de la termodinámica, trasferencia de calor, mecánica, mecánica clásica, mecánica cuántica, mecánica 
+     de fluidos, análisis estructural, estática, dinámica, ecuación diferencial, Ondas, Campos, trigonometría, cálculo 
+     vectorial, Teoría de control y ciencia de materiales para el diseño y análisis de diversos elementos usados en la 
+     actualidad, tales como maquinaria con diversos fines (térmicos, hidráulicos, transporte, manufactura, robótica), 
+     así como también de sistemas de ventilación, refrigeración, vehículos motorizados terrestres, aéreos y marítimos, 
+     entre otras aplicaciones.<br><br>
+     &nbsp;&nbsp;Los principales ámbitos generales desarrollados por ingenieros mecánicos incluyen el desarrollo de proyectos en 
+     los campos de la ingeniería que tengan por objeto la construcción, reforma, reparación, conservación, 
+     demolición, fabricación, instalación, montaje o explotación de: estructuras, equipos mecánicos, instalaciones
+     energéticas, instalaciones y plantas industriales.
+</h3>
+		  </div><!--close content_imagetext-->
+                  
+                  <div style="color: #005cbf"> 
+<h2>En el plan de estudios de la ingeniería mecánica se encuentra:</h2></div> 
+
+<h3>- Cálculo diferencial e integral, álgebra lineal y ecuaciones diferenciales
+<br><br>- Estática y dinámica
+<br><br>- Termodinámica, Transferencia de calor
+<br><br>- Dibujo técnico, diseño mecánico, diseño y fabricación asistida por computadora
+<br><br>- Ciencia de materiales, elasticidad, resistencia de materiales
+<br><br>- Mecánica de fluidos
+<br><br>- Tecnología mecánica
+<br><br>- Análisis numérico, método de los elementos finitos
+<br><br>- Teoría de control
+<br><br>Además incluye conocimientos básicos de electrónica y electricidad, química y conceptos de la ingeniería civil.
+</h3>                  
+
+<div style="text-align: right;">
+<a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_mec%C3%A1nica" class="btn  btn-danger">
+    <span class="far fa-edit"></span>  Fuente: Wikipedia</a>
+ </div>                 
+                                    
+        </div><!-- Final del Contenido de pagina -->
+    </div><!-- Final del wrapper -->
+
+<!-- Script para que la barra lateral este oculta por defecto en moviles -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

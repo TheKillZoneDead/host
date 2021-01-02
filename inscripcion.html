@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad San Benito</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS y Style CSS referencias -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    
+    <!-- Referencias js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+ <!-- Inicio wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad San Benito</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Secciones de la WEB</p>
+                
+                    <li class="active">
+                    <a href="index.html">Inicio</a>
+                </li>               
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Carerras</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="telecomunicaciones.html">Ing.Telecomunicaciones</a>
+                        </li>
+                        <li>
+                            <a href="informatica.html">Ing.Informática</a>
+                        </li>
+                        <li>
+                            <a href="mecanica.html">Ing.Mecánica</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Artículos de Interes</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="antenas.html">Antenas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Proceso de Inscripción</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="pdf/inscripcion.pdf" class="download">Descargar Planilla de Inscripción</a>
+                </li>         
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Alternar Barra Lateral</span>
+                    </button>
+                   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                         <!--     <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            ->
+      <!--  Inicio del buscador
+        <div class="nav search-row" id="top_menu">
+        <ul class="nav top-menu">
+          <li>
+            <form class="navbar-form">
+              <input class="form-control" placeholder="Search" type="text">
+            </form>
+          </li>
+        </ul>
+      </div **/
+      Final del buscador -->
+      
+                        </ul>
+                    </div> -
+                </div>
+            </nav>
+            <header>
+            <div id="banner">
+<div id="welcome">
+	      <h3>Inscripción</h3>
+</div>
+                </div>
+            </header>
+
+           
+<div id="alert" style="margin-top: 80px;">
+    <div style="color: #005cbf"> 
+    <h3>¡Proximamente Proceso Online <br>
+       </div> <div style="color: #005cbf"> 
+                  ¡Por Ahora Descarga la Planilla!</div>
+</div>
+            <div>  
+<a href="pdf/inscripcion.pdf" class="btn  btn-info" style="padding: 3rem 3rem; font-size: 2.5rem;"><span class="ok"></span>Descargar Planilla</a>
+            </div>
+
+
+
+        </div><!-- Final del Contenido de pagina -->
+    </div><!-- Final del wrapper -->
+
+<!-- Script para que la barra lateral este oculta por defecto en moviles -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
